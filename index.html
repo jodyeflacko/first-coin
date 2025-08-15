@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Firstcoin — The first coin to send on Pump.fun</title>
+  <meta name="description" content="Firstcoin — retro terminal aesthetic with a rocket takeoff animation. The first coin to send on Pump.fun." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">🚀</div>
+        <span id="brandName">Firstcoin</span>
+      </div>
+      <div class="nav-links">
+        <a href="#launch">Launch</a>
+        <a href="#features">Why First</a>
+        <a href="#faq">FAQ</a>
+        <button class="btn btn-primary" id="igniteBtn">Ignite</button>
+      </div>
+    </div>
+  </nav>
+
+  <header id="launch" class="container hero">
+    <div class="hero-copy">
+      <div class="pill">Terminal‑Core Launch Mode</div>
+      <h1>The <span class="grad">first coin</span> to send on <span class="nowrap">Pump.fun</span></h1>
+      <p class="sub">
+        CA: 
+      </p>
+      <div class="cta-row">
+        <button class="btn btn-primary" id="launchBtn">Launch the Rocket</button>
+        <a id="pumpLink" class="btn btn-ghost" href="https://pump.fun" target="_blank" rel="noreferrer">Go to Pump.fun →</a>
+      </div>
+      <div class="fineprint">LIFTOFF! – We have liftoff! Vehicle is clear of the tower, commencing roll program.</div>
+    </div>
+    <div class="hero-visual">
+      <div class="rocket-wrap">
+        <svg id="rocket" width="120" height="120" viewBox="0 0 120 120" fill="none" role="img" aria-label="Animated rocket">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#7DF9FF" />
+              <stop offset="100%" stop-color="#00F5A0" />
+            </linearGradient>
+          </defs>
+          <path d="M60 8c-12 10-20 27-22 46l-12 12v18l14-6 8 14h24l8-14 14 6V66l-12-12C80 35 72 18 60 8Z" fill="url(#g)"></path>
+          <circle cx="60" cy="46" r="10" fill="#00110f" stroke="#9ff6e8" stroke-width="3"></circle>
+          <path d="M38 84h44" stroke="#c7fff4" stroke-width="4" stroke-linecap="round"></path>
+        </svg>
+        <div id="exhaust"></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="ticker">
+    <div class="ticker-fade left"></div>
+    <div class="ticker-fade right"></div>
+    <div id="tickerTrack" class="ticker-track"></div>
+  </div>
+
+  <section id="features" class="container section">
+    <h2><span class="kicker">Feature Set</span>Why Firstcoin</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Terminal‑Fresh Branding</h3>
+        <p>Retro CRT glow meets modern gradients. A recognizable identity designed for shareability and memes.</p>
+      </div>
+      <div class="card">
+        <h3>One‑Tap Launch UX</h3>
+        <p>Ignite animation doubles as your CTA. Clear funnel to Pump.fun with social growth hooks built‑in.</p>
+      </div>
+      <div class="card">
+        <h3>Community‑First Playbook</h3>
+        <p>Transparent roadmap, rapid feedback cycles, and questable milestones to reward the earliest believers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="social" class="container section">
+    <h2><span class="kicker">Social Links</span>Plug Into the Countdown</h2>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <div class="h3">X / Twitter</div>
+            <p class="muted">Follow launch updates and memes.</p>
+          </div>
+          <div class="emoji">✖️</div>
+        </div>
+        <a id="twitterLink" class="link" href="#" target="_blank" rel="noreferrer">x.com/firstcoinonpump</a>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <div class="h3">Telegram</div>
+            <p class="muted">Join the chat. No shills, just signal.</p>
+          </div>
+          <div class="emoji">💬</div>
+        </div>
+        <a id="telegramLink" class="link" href="#" target="_blank" rel="noreferrer">t.me/firstcoin</a>
+      </div>
+      <div class="card">
+        <div class="card-head">
+          <div>
+            <div class="h3">YouTube</div>
+            <p class="muted">Devlogs and launch streams.</p>
+          </div>
+          <div class="emoji">▶️</div>
+        </div>
+        <a id="youtubeLink" class="link" href="#" target="_blank" rel="noreferrer">youtube.com/@firstcoin</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="roadmap" class="container section">
+    <h2><span class="kicker">Roadmap</span>Flight Plan</h2>
+    <div class="grid-4">
+      <div class="card">
+        <div class="phase">Phase 1</div>
+        <div class="h3">Ignition</div>
+        <ul class="bullets">
+          <li>Brand drop & site</li>
+          <li>Community formation</li>
+          <li>Pump.fun launch prep</li>
+          <li>Post‑launch quests</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="phase">Phase 2</div>
+        <div class="h3">Lift‑Off</div>
+        <ul class="bullets">
+          <li>Liquidity and memes</li>
+          <li>Creator collabs</li>
+          <li>Quest leaderboard</li>
+          <li>Community treasury</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="phase">Phase 3</div>
+        <div class="h3">Orbit</div>
+        <ul class="bullets">
+          <li>Feature drops</li>
+          <li>Live streams</li>
+          <li>Tooling & bots</li>
+          <li>Multi‑chain pilots</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="phase">Phase 4</div>
+        <div class="h3">Dock</div>
+        <ul class="bullets">
+          <li>DAO vote</li>
+          <li>Perks rollout</li>
+          <li>Partnerships</li>
+          <li>Long‑term roadmap</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="container section">
+    <h2><span class="kicker">Good to Know</span>FAQ</h2>
+    <div class="grid-2">
+      <div class="card">
+        <div class="h3">Can this go to $1?</div>
+        <p>Anything’s possible in crypto. But remember — market caps exist, and math is real.</p>
+      </div>
+      <div class="card">
+        <div class="h3">Where does Pump.fun fit in?</div>
+        <p>Firstcoin positions itself as the first coin to send on Pump.fun during launch day. Use the CTA to jump there.</p>
+      </div>
+      <div class="card">
+        <div class="h3">What’s the utility?</div>
+        <p>t’s packed with real utility. Holders get access to exclusive NFT drops, staking rewards, governance voting, merch store payments, and play-to-earn mini-games. It’s a token built for fun and function, giving the community both entertainment and tangible on-chain benefits.</p>
+      </div>
+      <div class="card">
+        <div class="h3">Is there a roadmap?</div>
+        <p>Phase 1: Launch, hype, chaos.Phase 2: Merch, memes, more holders.Phase 3: Partnerships, staking, and “utility” .Phase 4: Global meme domination.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container footer">
+    <div class="card footer-card">
+      <div>
+        <div class="h3">Ready to be first?</div>
+        <div class="muted">Light the fuse and make history on Pump.fun.</div>
+      </div>
+      <div class="cta-row">
+        <button class="btn btn-primary" id="igniteAgain">Ignite Again</button>
+        <a id="pumpLink2" class="btn btn-ghost" href="https://pump.fun" target="_blank" rel="noreferrer">Pump.fun →</a>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Firstcoin. For demonstration purposes only.</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
